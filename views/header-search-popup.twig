@@ -1,0 +1,11 @@
+{# translation-ready, escaped, formatted, semantic #}
+<div id="ModalNavbarSearch" class="uk-modal-full" uk-modal>
+  <div class="uk-modal-dialog uk-flex uk-flex-center uk-flex-middle" uk-height-viewport>
+    <button class="uk-modal-close-full" type="button" uk-close></button>
+    <form class="uk-search uk-search-large" role="search" method="get" action="{{site.url|e('esc_url')}}">
+      <input id="header-search" class="uk-search-input uk-text-center" type="search" name="s" placeholder="{{ _x('Start typing...', 'Search placeholder', 'header-search-popup')|e('esc_html') }}" 
+      required maxlength="100" pattern=".*\S+.*" autocomplete="off" autofocus>
+      <input type="hidden" name="post_type" value="product" />
+    </form>
+  </div>
+</div>
