@@ -2,7 +2,7 @@
 /*
 Plugin Name: Header Search Popup
 Plugin URI: #
-Description: A custom popup product search. Toggle it #ModalNavbarSearch
+Description: A custom popup product search. Toggle it with #ModalNavbarSearch
 Version: 1.0.0
 Author: robmccormack89
 Author URI: #
