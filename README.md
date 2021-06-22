@@ -1,3 +1,3 @@
-# Minicart & popup modal for Woocommerce
+# Popup Product Search
 
 A custom popup product search. Toggle it with #ModalNavbarSearch
