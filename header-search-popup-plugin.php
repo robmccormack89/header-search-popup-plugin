@@ -1,6 +1,6 @@
 <?php
 /*
-Plugin Name: Header Search Popup
+Plugin Name: Header Search Popup for Woocommerce by RMcC
 Plugin URI: #
 Description: A custom popup product search. Toggle it with #ModalNavbarSearch
 Version: 1.0.0
