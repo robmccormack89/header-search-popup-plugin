@@ -20,7 +20,9 @@ class HeaderSearchPopup extends Timber {
   }
   
   public function add_to_twig($twig) { 
-    $twig->addExtension(new \Twig_Extension_StringLoader());
+    if(!class_exists('Twig_Extension_StringLoader')){
+      $twig->addExtension(new Twig_Extension_StringLoader());
+    }
     return $twig;
   }
 
