@@ -2,7 +2,7 @@
 /*
 Plugin Name: Header Search Popup for Woocommerce by RMcC
 Plugin URI: #
-Description: A custom popup product search. Toggle it with #ModalNavbarSearch
+Description: A custom product search poup. Toggle it with #ModalNavbarSearch using https://getuikit.com/docs/toggle. This plugin is translation-ready.
 Version: 1.0.0
 Author: robmccormack89
 Author URI: #
