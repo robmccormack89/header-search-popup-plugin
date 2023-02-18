@@ -1,4 +1,4 @@
-# Copyright (C) 2021 header-search-popup
+# Copyright (C) 2023 header-search-popup
 # This file is distributed under the same license as the header-search-popup package.
 msgid ""
 msgstr ""
@@ -13,7 +13,7 @@ msgstr ""
 "X-Poedit-SourceCharset: UTF-8\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
 
-#: views/temp/header-search-popup.php:6
-msgctxt "Search placeholder"
+#: views/temp/header-search-popup.php:5
+msgctxt "Placeholder"
 msgid "Start typing..."
 msgstr ""

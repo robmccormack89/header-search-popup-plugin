@@ -11,9 +11,11 @@ class HeaderSearchPopup extends Timber {
     
     add_action('plugins_loaded', array($this, 'plugin_timber_locations'));
     add_action('plugins_loaded', array($this, 'plugin_text_domain_init')); 
-    // add_action('wp_enqueue_scripts', array($this, 'plugin_enqueue_assets'));
+    add_action('wp_enqueue_scripts', array($this, 'plugin_enqueue_assets'));
 
-    add_action('rmcc_after_header', 'header_search_popup', 20);
+    // add_action('rmcc_after_header', 'header_search_popup', 20);
+    add_action('wp_footer', 'header_search_popup');
+    
   }
   
   public function plugin_timber_locations() {
@@ -27,6 +29,27 @@ class HeaderSearchPopup extends Timber {
   }
   public function plugin_text_domain_init() {
     load_plugin_textdomain('header-search-popup', false, HEADER_SEARCH_BASE. '/languages');
+  }
+
+  public function plugin_enqueue_assets() {
+    wp_enqueue_style(
+      'uikit',
+      'https://cdn.jsdelivr.net/npm/uikit@3.15.24/dist/css/uikit.min.css'
+    );
+    wp_enqueue_script(
+      'uikit',
+      'https://cdn.jsdelivr.net/npm/uikit@3.15.24/dist/js/uikit.min.js',
+      array(),
+      '3.15.24',
+      false
+    );
+    wp_enqueue_script(
+      'uikit-icons',
+      'https://cdn.jsdelivr.net/npm/uikit@3.15.24/dist/js/uikit-icons.min.js',
+      array(),
+      '3.15.24',
+      false
+    );
   }
   
   public function add_to_twig($twig) { 
